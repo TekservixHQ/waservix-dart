@@ -10,9 +10,8 @@ void main() {
   var status = 200;
   var reply = '{"success":true,"data":{"msgId":58213,"status":"in_progress"}}';
 
-  WAservix client() => WAservix('wpk_test',
-      baseUrl: 'https://example.test/api',
-      httpClient: MockClient((req) async {
+  WAservix client() => WAservix('wpk_test', baseUrl: 'https://example.test/api',
+          httpClient: MockClient((req) async {
         last = req;
         return http.Response(reply, status,
             headers: {'content-type': 'application/json'});
@@ -38,7 +37,8 @@ void main() {
     final c = client();
     await c.sendImage('+1', 'https://x/y.jpg');
     expect(body(), {'to': '+1', 'imageUrl': 'https://x/y.jpg'});
-    await c.sendDocument('+1', 'https://x/a.pdf', fileName: 'a.pdf', caption: 'c');
+    await c.sendDocument('+1', 'https://x/a.pdf',
+        fileName: 'a.pdf', caption: 'c');
     expect(body()['fileName'], 'a.pdf');
     expect(body()['text'], 'c');
     await c.sendLocation('+1', -1.9441, 30.0619, name: 'Shop');

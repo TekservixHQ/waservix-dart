@@ -89,8 +89,8 @@ class WAservix {
       req.body = jsonEncode(body);
     }
 
-    final res = await http.Response.fromStream(
-        await _http.send(req).timeout(_timeout));
+    final res =
+        await http.Response.fromStream(await _http.send(req).timeout(_timeout));
     final text = utf8.decode(res.bodyBytes, allowMalformed: true);
     Object? json;
     if (text.isNotEmpty) {
