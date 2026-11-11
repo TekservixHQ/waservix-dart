@@ -3,6 +3,8 @@
 [![pub package](https://img.shields.io/pub/v/waservix.svg)](https://pub.dev/packages/waservix)
 [![tests](https://github.com/TekservixHQ/waservix-dart/actions/workflows/tests.yml/badge.svg)](https://github.com/TekservixHQ/waservix-dart/actions/workflows/tests.yml)
 
+**WAservix WhatsApp API Gateway** - official Dart and Flutter client: send WhatsApp messages from your own number. By Tekservix.
+
 Dart and Flutter client for the [WAservix WhatsApp API Gateway](https://tekservix.com/waservix/).
 
 WAservix links your own WhatsApp number by QR code (the same way WhatsApp Web does) and gives you a REST API to send text, images, video, audio, documents, locations, polls and more, with webhooks for incoming messages and status updates.
