@@ -18,7 +18,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 /// Package version, sent in the User-Agent header.
-const String waservixVersion = '1.0.1';
+const String waservixVersion = '1.0.2';
 
 /// Thrown when the API answers with an error. A 503 means the device is reconnecting.
 class WAservixException implements Exception {
