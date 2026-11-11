@@ -1,6 +1,6 @@
 name: waservix
-description: Dart and Flutter client for the WAservix WhatsApp API Gateway. Send WhatsApp text, media, locations and polls from your own number, with webhooks.
-version: 1.0.0
+description: WAservix WhatsApp API Gateway: official Dart and Flutter client by Tekservix. Send WhatsApp text, media, locations and polls from your own number.
+version: 1.0.1
 homepage: https://tekservix.com/waservix/
 repository: https://github.com/TekservixHQ/waservix-dart
 issue_tracker: https://github.com/TekservixHQ/waservix-dart/issues
